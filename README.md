@@ -17,6 +17,29 @@ ResolveIQ adalah aplikasi dashboard enterprise yang membantu tim IT mencatat ins
 - **Export** — Unduh post-mortem sebagai file Markdown, salin ke clipboard, atau cetak
 - **Knowledge Base** — Pencarian terpadu atas insiden, runbook, dan post-mortem dengan tab dan highlight
 
+## Screenshots
+
+### Dashboard
+![Dashboard ResolveIQ](docs/images/dashboard1.png)
+![Dashboard ResolveIQ](docs/images/dashboard2.png)
+![Dashboard ResolveIQ](docs/images/dashboard2.png)
+
+### Incidents
+![Halaman Incidents](docs/images/incidents.png)
+![Halaman Incidents](docs/images/incidents2.png)
+![Halaman Form Tambah Incidents](docs/images/form-incidents.png)
+
+### Runbooks
+![Halaman Runbooks](docs/images/runbooks.png)
+![Halaman Form Tambah RunbooksIncidents](docs/images/form-runbooks.png)
+
+### Post-Mortems 
+![Post-Mortem Wizard](docs/images/pm1.png)
+![Form Tambah Post-Mortem Wizard](docs/images/form-pm.png)
+
+### Knowledge-Base
+![Halaman Knowledge Base](docs/images/knowledge-base.png)
+
 ---
 
 ## 🛠 Tech Stack

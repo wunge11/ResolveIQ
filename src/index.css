@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Global base styles — hanya yang benar-benar tidak bisa
+   diekspresikan dengan utility class Tailwind
+   ============================================================ */
+
+/* Smooth scrolling untuk seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus ring yang terlihat jelas untuk aksesibilitas */
+*:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar tipis agar dashboard terlihat rapi */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* slate-100 */
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* slate-400 */
+}
+
+/* Animasi fade-in ringan untuk modal */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.15s ease-out;
+}
+
+/* Animasi slide-in untuk sidebar drawer mobile */
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+.animate-slide-in-left {
+  animation: slideInLeft 0.2s ease-out;
+}
+
+/* Penyorotan kata kunci pencarian */
+mark {
+  background-color: #FEF08A; /* yellow-200 */
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* Print stylesheet untuk post-mortem */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  main {
+    overflow: visible !important;
+  }
+}
+
+/* Mencegah scroll horizontal pada body di lebar sempit */
+body {
+  overflow-x: hidden;
+}
+
+/* Transisi sidebar pada desktop */
+.sidebar-transition {
+  transition: width 0.3s ease;
+}
+
+/* Line clamp utility (untuk browser lama) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Tabular numbers untuk angka-angka metric */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

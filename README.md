@@ -2,7 +2,7 @@
 
 **Sistem Manajemen Insiden IT dan Pembuatan Post-Mortem Terstruktur**
 
-ResolveIQ adalah aplikasi dashboard enterprise yang membantu tim IT mencatat insiden, menentukan severity, mencari kasus serupa, mengikuti runbook, mencatat kronologi, membuat post-mortem, dan melihat tren insiden — semuanya dalam satu antarmuka yang modern dan responsif.
+ResolveIQ adalah website dashboard enterprise yang membantu tim IT mencatat insiden, menentukan severity, mencari kasus serupa, mengikuti runbook, mencatat kronologi, membuat post-mortem, dan melihat tren insiden.
 
 ---
 
